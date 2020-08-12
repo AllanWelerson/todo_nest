@@ -1,0 +1,25 @@
+GET http://localhost:3000/users/
+
+###
+GET http://localhost:3000/users/1
+
+###
+POST http://localhost:3000/users/ HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "my first name",
+  "lastName": "my last name"
+}
+
+###
+PUT http://localhost:3000/users/4 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "my first name atualizado",
+  "lastName": "my last name atualizado"
+}
+
+###
+DELETE http://localhost:3000/users/4

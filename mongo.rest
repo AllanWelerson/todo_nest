@@ -1,0 +1,32 @@
+
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/tasks
+
+###
+GET http://localhost:3000/tasks/5f2253607225b30e8d38a1bc
+
+###
+POST http://localhost:3000/tasks/ HTTP/1.1
+content-type: application/json
+
+{
+  "description": "Tarefa 1",
+  "completed": false
+}
+
+###
+PUT http://localhost:3000/tasks/5f2253607225b30e8d38a1bc HTTP/1.1
+content-type: application/json
+
+{
+  "description": "Tarefa 1 alterada",
+  "completed": true
+}
+
+###
+DELETE http://localhost:3000/tasks/5f1e5076c1f64f7be52f82ea
+
+###
+GET http://localhost:3000/tasks/another
